@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""3-rectangle, built for Holberton Python project 0x08 task 3.
+"""3-rectangle, built for Alx Python project 0x08 task 3.
 """
 
 

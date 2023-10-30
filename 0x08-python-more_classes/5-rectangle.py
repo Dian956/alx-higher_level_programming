@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""4-rectangle, built for Alx Python project 0x08 task 4.
+"""5-rectangle, built Alx  Python project 0x08 task 5.
 """
 
 
@@ -7,7 +7,7 @@ class Rectangle:
     """Takes in args for width and height of a rectangle, and contains methods
     for calculation of the area or perimeter.
 
-    __str__ and __repr__ fuctionality defined below.
+    __str__, __repr__, and __del__ fuctionality defined below.
 
     Args:
         width (int): horizontal dimension of rectangle, defaults to 0
@@ -147,3 +147,10 @@ class Rectangle:
 
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    @staticmethod
+    def __del__():
+        """Prints message upon deletion of instance.
+
+        """
+        print('Bye rectangle...')

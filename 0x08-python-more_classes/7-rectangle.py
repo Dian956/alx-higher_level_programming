@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""6-rectangle, built for Alx Python project 0x08 task 6.
+"""7-rectangle, built for Alx  Python project 0x08 task 7.
 """
 
 
@@ -13,9 +13,12 @@ class Rectangle:
     Attributes:
         number_of_instances (int): counter incrementing for every
             instantiation, and decrementing for every instance deletion.
+        print_symbol (str): single character to be used in assembling string
+            representation of rectangle
 
     """
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Increments `number_of_instances` and calls setters for `__width`
@@ -111,7 +114,7 @@ class Rectangle:
 
         Returns:
             0 if either attribute is 0, or the perimeter: (__width * 2) +
-            (__height * 2).
+        (__height * 2).
 
         """
         if self.__width is 0 or self.__height is 0:
@@ -130,13 +133,13 @@ class Rectangle:
 
         Returns:
             str (str): string suitable for printing rectangle (final newline
-            omitted)
+                omitted)
 
         """
         str = ""
         for row in range(self.__height):
             for col in range(self.__width):
-                str += '#'
+                str += "{}".format(self.print_symbol)
             if self.__width != 0 and row < (self.__height - 1):
                 str += '\n'
         return str
